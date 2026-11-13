@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="GTU Materials - subject-wise study notes and PDFs." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="GTU Materials - subject-wise study notes and PDFs.">
   <title>GTU Materials</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <header class="page-header">
-      <div class="brand-mark" aria-hidden="true">GTU</div>
-      <div>
-        <p class="eyebrow">STUDY RESOURCE LIBRARY</p>
-        <h1>GTU Materials</h1>
-        <p class="subtitle">Your semester notes, organised subject-wise.</p>
-      </div>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="GTU Materials home">
+        <span class="brand-mark">G</span>
+        <span>GTU <b>Materials</b></span>
+      </a>
+      <span class="semester-tag">STUDY RESOURCE</span>
     </header>
-    <section class="intro">
-      <h2>Choose a subject</h2>
-      <p>Open a subject to access its study material.</p>
-    </section>
-    <section id="subjects" class="subject-grid" aria-label="GTU subjects"></section>
-    <footer>GTU Materials · Study smart, stay consistent.</footer>
-  </main>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">YOUR STUDY SPACE</p>
+        <h1>Everything you need.<br><span>One place to study.</span></h1>
+        <p class="hero-copy">Choose a subject to explore its notes, unit PDFs and study material.</p>
+        <div class="search-wrap">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search subjects or PDF files..." aria-label="Search subjects or PDF files">
+          <kbd>SEARCH</kbd>
+        </div>
+      </section>
+
+      <section class="subjects-section">
+        <div class="section-heading">
+          <div><p class="eyebrow">YOUR LIBRARY</p><h2>Subjects</h2></div>
+          <p class="section-hint">Select a subject to view its PDFs</p>
+        </div>
+        <div id="subjectGrid" class="subject-grid"></div>
+      </section>
+      <p class="footer-note">GTU Materials <span>·</span> Keep learning, keep growing.</p>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
